@@ -1,0 +1,42 @@
+import java.awt.*;
+class File_Explorer_structure{
+public static void main(String args[]){
+Frame f=new Frame("Menu bar");
+MenuBar p=new MenuBar();
+f.setMenuBar(p);
+Menu m=new Menu("file");
+Menu m1=new Menu("Edit");
+Menu m2=new Menu("View");
+p.add(m);
+p.add(m1);
+p.add(m2);
+MenuItem m3=new MenuItem("open");
+MenuItem m4=new MenuItem("save");
+MenuItem m5=new MenuItem("save as...");
+MenuItem m6=new MenuItem("-");
+MenuItem m7=new MenuItem("Quit...");
+MenuItem m8=new MenuItem("Save all");
+MenuItem m9=new MenuItem("undo");
+MenuItem m10=new MenuItem("cut");
+MenuItem m11=new MenuItem("copy");
+MenuItem m12=new MenuItem("paste");
+MenuItem m13=new MenuItem("zoom");
+MenuItem m14=new MenuItem("statusbar");
+MenuItem m15=new MenuItem("Word wrap");
+m.add(m3);
+m.add(m4);
+m.add(m5);
+m.add(m6);
+m.add(m7);
+m.add(m8);
+m1.add(m9);
+m1.add(m10);
+m1.add(m11);
+m1.add(m12);
+m2.add(m13);
+m2.add(m14);
+m2.add(m15);
+f.setLayout(new FlowLayout());
+f.setSize(300,500);
+f.setVisible(true);
+}}
